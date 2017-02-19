@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+table.imagetable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+	
+}
+table.imagetable th {
+	background:#b5cfd2 url('cell-blue.jpg');
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+	
+}
+table.imagetable td {
+	background:#dcddc0 url('cell-grey.jpg');
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+	
+
+}
+
+a { white-space: nowrap }
+</style>
+
+<meta charset="ISO-8859-1">
+<title> Test Events</title>
+</head>
+<body>
+<div>
+
+<form id="criteriaEventsForm"  >
+  <table>
+  	<tr>
+  		<td>
+  		  	Category: <input id="category" type="text" name="category">
+  		</td>
+  	</tr>
+  	<tr>
+  		<td>
+  		  	Location: <input id="location" type="text" name="location">
+  		</td>
+  	</tr>
+  	<tr>
+  		<td>
+  			<input type="submit" value="Find Events" id="findEventsBtn">
+  		</td>
+  	</tr>
+  </table>
+</form>
+
+<br>
+<br>
+
+<table style="width: 100%" class="imagetable">
+     <thead>
+          <tr>
+               <th>Event Link</th>
+               <th>Start Time</th>
+               <th>End Time</th>
+               <th>Description</th>
+           </tr>
+     </thead>
+     <tbody id="results">
+     </tbody>
+</table>
+</div>
+<script type="text/javascript"
+        src="webjars/jquery/2.2.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
