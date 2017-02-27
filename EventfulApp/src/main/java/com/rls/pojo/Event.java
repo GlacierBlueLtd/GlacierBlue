@@ -21,6 +21,22 @@ public final class Event {
 	@XmlElement(name="stop_time")
 	private String stopTime;
 	
+	
+	public Event() {
+	}
+	
+	
+	public Event(String title, String url, String description, String startTime, String stopTime) {
+		super();
+		this.title = title;
+		this.url = url;
+		this.description = description;
+		this.startTime = startTime;
+		this.stopTime = stopTime;
+	}
+
+
+
 	public String getTitle() {
 		return title;
 	}
