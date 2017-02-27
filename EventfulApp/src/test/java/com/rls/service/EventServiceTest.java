@@ -75,9 +75,6 @@ public class EventServiceTest {
 		assertThat(events.size(), equalTo(evenrCountExpected));
 	}
 	
-	@Test
-	public void testInValidXml() {
-		
-	}
+	
 
 }
